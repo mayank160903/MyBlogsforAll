@@ -46,7 +46,7 @@ function PostTest({_id, title, summary, cover, content, createdAt, author}) {
 
                     <p className="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis sint autem nesciunt,
-                        laudantium quia tempore delect
+                        laudanti quia tempore delect
                     </p>
 
                     <p className="mt-3 text-sm text-blue-500">20 October 2019</p>
