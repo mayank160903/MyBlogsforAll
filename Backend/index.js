@@ -140,8 +140,3 @@ app.put("/post", uploadMiddleware.single("file"), async (req, res) => {
 app.listen(4000);
 
 module.exports = app;
-
-
-
-
-
