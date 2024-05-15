@@ -10,6 +10,13 @@ import Postpage from "./pages/Postpage";
 import EditPost from "./pages/EditPost";
 
 function App() {
+
+  async function fetchInfo(){
+    const url = `${process.env.REACT_APP_API_URL}`
+    const response = await fetch(url)
+    const json = await response.json();
+  }
+  
   return (
     <UserContextProvider>
     <Routes>

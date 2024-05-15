@@ -11,6 +11,8 @@ const multer = require("multer");
 const uploadMiddleware = multer({ dest: "uploads/" });
 const fs = require("fs");
 const PostModel = require("./models/Post");
+const dotenv = require('dotenv');
+dotenv.config();
 
 const salt = bcrypt.genSaltSync(10);
 const secret = "ikjhgfbwerghhgfd";
