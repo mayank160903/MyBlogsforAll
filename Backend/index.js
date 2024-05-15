@@ -130,8 +130,9 @@ app.put("/post", uploadMiddleware.single("file"), async (req, res) => {
     }
 
     await postDoc.update({ title, summary, content, cover: newPath? newPath : postDoc.cover });
+    res.json(postDoc);
   });
-  res.json(postDoc);
+  
 });
 
 app.listen(4000);

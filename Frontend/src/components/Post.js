@@ -29,7 +29,7 @@ const Post = ({_id, title, summary, cover, content, createdAt, author}) => {
     </div>
     
   </div>
-   <div>
+   {/* <div>
       <section className="bg-white dark:bg-gray-900">
     <div className="container px-6 py-10 mx-auto">
         <div className="text-center">
@@ -80,7 +80,7 @@ const Post = ({_id, title, summary, cover, content, createdAt, author}) => {
         </div>
     </div>
 </section>
-    </div>
+    </div> */}
 
   
   </div>
