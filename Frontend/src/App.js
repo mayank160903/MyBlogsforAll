@@ -13,7 +13,7 @@ function App() {
 
   async function fetchInfo(){
     const url = `${process.env.REACT_APP_API_URL}`
-    const response = await fetch(url)
+    const response = await fetch(url);
     const json = await response.json();
   }
   
