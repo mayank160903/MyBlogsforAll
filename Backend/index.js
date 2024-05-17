@@ -137,6 +137,13 @@ app.put("/post", uploadMiddleware.single("file"), async (req, res) => {
   
 });
 
-app.listen(4000);
+if(process.env.API_PORT){
+  app.listen(process.env.API_PORT);
+}
 
 module.exports = app;
+
+
+
+
+
