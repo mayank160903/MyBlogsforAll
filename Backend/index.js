@@ -22,6 +22,14 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 
+const express = require('express');
+
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', 'https://my-blogsfor-all.vercel.app');
+    next();
+});
+
+
 mongoose.connect(
   "mongodb+srv://gmayank909:3JKxhdInMoWZ1lv1@maincluster.nu9yhrt.mongodb.net/?retryWrites=true&w=majority&appName=MainCluster"
 );
