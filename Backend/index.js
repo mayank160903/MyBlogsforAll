@@ -17,7 +17,7 @@ dotenv.config();
 const salt = bcrypt.genSaltSync(10);
 const secret = "ikjhgfbwerghhgfd";
 
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({ credentials: true, origin: "https://my-blogsfor-all.vercel.app/" }));
 app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
